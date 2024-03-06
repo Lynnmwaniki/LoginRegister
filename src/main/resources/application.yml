@@ -1,12 +1,21 @@
-spring.application.name=RegistrationLogin
-server.port=8080
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
 
-spring.jpa.hibernate.ddl-auto=update
-spring.datasource.driver-class-name=org.postgresql.Driver
-
-spring.datasource.url=jdbc:postgresql://localhost:5432/postgres
-spring.datasource.username=postgres
-spring.datasource.password=1234
+spring:
+  datasource:
+    password: 1234
+    url: jdbc:postgresql://localhost:5432/registration
+    username: registration
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
 
 #spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation= true
 #spring.jpa.properties.hibernate.transaction.jta.platform= org.hibernate.dialect.PostgreSQLDialect

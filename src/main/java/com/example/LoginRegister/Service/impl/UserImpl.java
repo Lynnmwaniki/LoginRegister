@@ -2,16 +2,14 @@ package com.example.LoginRegister.Service.impl;
 
 import com.example.LoginRegister.Dto.LogInDto;
 import com.example.LoginRegister.Dto.UserDto;
-import com.example.LoginRegister.Entity.User;
+import com.example.LoginRegister.appuser.User;
 import com.example.LoginRegister.Repo.UserRepo;
 import com.example.LoginRegister.Service.UserService;
-import com.example.LoginRegister.payloadresponse.LoginMessage;
 import com.example.LoginRegister.response.LoginResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import javax.swing.text.html.Option;
 import java.util.Optional;
 
 @Service

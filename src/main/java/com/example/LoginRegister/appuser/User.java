@@ -1,6 +1,7 @@
-package com.example.LoginRegister.Entity;
+package com.example.LoginRegister.appuser;
 
 
+import com.example.LoginRegister.Dto.UserDto;
 import jakarta.persistence.*;
 
 @Entity
